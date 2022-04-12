@@ -7,10 +7,24 @@ Main features:
  - Edit and access all fields
  - Save a solution into a .solution file readable by the game
 
+## DISCLAIMER:
+
+Back up all files you manipulate with this software. I take no responsibility for any damage caused by the usage of this software.
+
 ## Usage
 
-to be added
+Example: Reading and saving a .solution file with an edited name:
+
+```python
+from exapunks.solution import Solution
+
+sol = Solution.from_file("file.solution")
+
+sol.solution_name = "New and cool name"
+
+sol.to_file("newfile.solution")
+```
 
 ## Installation
 
-to be added
+idk how python works
